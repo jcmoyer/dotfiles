@@ -96,6 +96,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd FileType * setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
 
 " Haskell
-" Map F5 to run the current script in ghci
-autocmd FileType haskell nmap <buffer> <F5> :!start ghci %:p<CR>
+" Map F5 to load the current file into ghci
+if has("unix")
+  autocmd FileType haskell nmap <buffer> <F5> :!ghci %:p<CR>
+else
+  autocmd FileType haskell nmap <buffer> <F5> :!start ghci %:p<CR>
+endif
 
