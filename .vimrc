@@ -83,7 +83,7 @@ endif
 
 " Map Ctrl+T to create a tab
 nmap <C-t> :tabnew<CR>
-imap <C-t> :tabnew<CR>
+imap <C-t> <Esc>:tabnew<CR>i
 
 " Enable plugins and indentation based on filetype
 filetype plugin on
