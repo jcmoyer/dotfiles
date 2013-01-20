@@ -5,14 +5,6 @@ set nocompatible
 " This basically specifies what backspace will erase in insert mode.
 set backspace=indent,eol,start
 
-" Try to save backup files to ~/.vim/backup, but if it doesn't exist, use the
-" current directory instead.
-if has("unix")
-  set backupdir=$HOME/.vim/backup//,.
-elseif has("win32")
-  " TODO
-endif
-
 " On the VMS system, we don't keep a backup of the file because it does that
 " automatically. Otherwise, enable it. When enabled, backups will have the
 " original filename with an '~' appended to it.
