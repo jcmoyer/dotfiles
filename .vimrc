@@ -90,15 +90,15 @@ autocmd FileType * setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
 " Haskell
 " Map F5 to load the current file into ghci
 if has("unix")
-  autocmd FileType haskell nmap <buffer> <F5> :!ghci %:p<CR>
+  autocmd FileType haskell nmap <buffer> <F5> :!ghci "%:p"<CR>
 else
-  autocmd FileType haskell nmap <buffer> <F5> :!start ghci %:p<CR>
+  autocmd FileType haskell nmap <buffer> <F5> :!start ghci "%:p"<CR>
 endif
 
 " Python
 " Map F5 to run the current script
 if has("unix")
-  autocmd FileType python nmap <buffer> <F5> :!python %:p<CR>
+  autocmd FileType python nmap <buffer> <F5> :!python "%:p"<CR>
 else
-  autocmd FileType python nmap <buffer> <F5> :!python %:p<CR>
+  autocmd FileType python nmap <buffer> <F5> :!python "%:p"<CR>
 endif
