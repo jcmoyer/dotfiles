@@ -95,3 +95,10 @@ else
   autocmd FileType haskell nmap <buffer> <F5> :!start ghci %:p<CR>
 endif
 
+" Python
+" Map F5 to run the current script
+if has("unix")
+  autocmd FileType python nmap <buffer> <F5> :!python %:p<CR>
+else
+  autocmd FileType python nmap <buffer> <F5> :!python %:p<CR>
+endif
