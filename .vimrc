@@ -87,6 +87,11 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Always use spaces for tabs and with a width of 2
 autocmd FileType * setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
 
+" Do not indent access specifiers
+set cinoptions+=g0
+" Use two spaces on the next line continuing from unclosed parentheses
+set cinoptions+=(2
+
 " Haskell
 " Map F5 to load the current file into ghci
 if has("unix")
