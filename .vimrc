@@ -107,3 +107,7 @@ if has("unix")
 else
   autocmd FileType python nmap <buffer> <F5> :!python "%:p"<CR>
 endif
+
+" pathogen.vim (https://github.com/tpope/vim-pathogen)
+execute pathogen#infect()
+
