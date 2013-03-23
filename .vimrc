@@ -111,3 +111,10 @@ endif
 " pathogen.vim (https://github.com/tpope/vim-pathogen)
 execute pathogen#infect()
 
+" Windows GVIM requires these encoding settings for NERDTreeDirArrows to work
+" properly.
+if has("win32")
+  scriptencoding utf-8
+  set encoding=utf-8
+  let NERDTreeDirArrows=1
+endif
