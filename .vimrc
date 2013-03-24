@@ -118,3 +118,6 @@ if has("win32")
   set encoding=utf-8
   let NERDTreeDirArrows=1
 endif
+
+" Close vim if NERDTree is the last window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
