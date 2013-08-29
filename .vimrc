@@ -121,3 +121,6 @@ endif
 
 " Close vim if NERDTree is the last window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Enable airline
+set laststatus=2
