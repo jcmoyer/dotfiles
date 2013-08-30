@@ -92,22 +92,6 @@ set cinoptions+=g0
 " Use two spaces on the next line continuing from unclosed parentheses
 set cinoptions+=(2
 
-" Haskell
-" Map F5 to load the current file into ghci
-if has("unix")
-  autocmd FileType haskell nmap <buffer> <F5> :!ghci "%:p"<CR>
-else
-  autocmd FileType haskell nmap <buffer> <F5> :!start ghci "%:p"<CR>
-endif
-
-" Python
-" Map F5 to run the current script
-if has("unix")
-  autocmd FileType python nmap <buffer> <F5> :!python "%:p"<CR>
-else
-  autocmd FileType python nmap <buffer> <F5> :!python "%:p"<CR>
-endif
-
 " pathogen.vim (https://github.com/tpope/vim-pathogen)
 execute pathogen#infect()
 
