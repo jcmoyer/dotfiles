@@ -101,6 +101,8 @@ if has("win32")
   scriptencoding utf-8
   set encoding=utf-8
   let NERDTreeDirArrows=1
+  " use windows clipboard as the default scratch register
+  set clipboard=unnamed
 endif
 
 " Close vim if NERDTree is the last window open
