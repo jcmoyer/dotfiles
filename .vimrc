@@ -84,8 +84,11 @@ filetype indent on
 " Disable automatic comment insertion on <CR>
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Always use spaces for tabs and with a width of 2
-autocmd FileType * setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
+" Set reasonable tab defaults
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " Do not indent access specifiers
 set cinoptions+=g0
