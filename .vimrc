@@ -33,6 +33,7 @@ set wildmode=list:longest,full
 set wildchar=<Tab>
 
 " Theme
+let g:molokai_original = 1
 colorscheme molokai
 
 if has("gui_running")
@@ -113,3 +114,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " Enable airline
 set laststatus=2
+
+" Invert default split locations
+set splitright
+set splitbelow
